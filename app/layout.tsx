@@ -5,16 +5,16 @@ import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import MegaNav from "@/components/layout/MegaNav"
-import { Footer } from "@/components/layout/Footer"
-import { BrandProvider } from "@/components/providers/BrandProvider"
-import { getBrand } from "@/lib/siteConfig"
+import Footer from "@/components/layout/Footer"
+import BrandProvider from "@/components/providers/BrandProvider"
+import { getBrand } from "@/lib/server/siteConfig"
 import { listPillars, listSections, listClusters, listArticles } from "@/lib/taxonomy"
 import "./globals.css"
 import { StickyShareBar } from "@/components/share/StickyShareBar"
 import { WebVitals } from "@/components/WebVitals"
 
 export async function generateMetadata(): Promise<Metadata> {
-  const brand = getBrand()
+  const { brand } = await getSiteConfig()
   return {
     title: brand.siteName,
     description: brand.description,
@@ -22,12 +22,12 @@ export async function generateMetadata(): Promise<Metadata> {
   }
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const brand = getBrand()
+  const { brand } = await getSiteConfig()
 
   const pillars = listPillars()
   const sections = listSections()
