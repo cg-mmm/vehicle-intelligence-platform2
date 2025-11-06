@@ -1,0 +1,206 @@
+{
+  "packId": "default",
+  "packName": "Default Content Pack",
+  "version": "1.0.0",
+  "features": {
+    "articles": true,
+    "database": true,
+    "videos": true,
+    "newsletter": true,
+    "comments": false
+  },
+  "navigation": {
+    "primary": [
+      { "label": "Home", "href": "/" },
+      { "label": "Articles", "href": "/articles" },
+      { "label": "Database", "href": "/database" },
+      { "label": "Videos", "href": "/video" }
+    ],
+    "secondary": [{ "label": "About", "href": "/about" }, { "label": "Contact", "href": "/contact" }]
+  },
+  "footer": {
+    "columns": [
+      {
+        "title": "Product",
+        "links": [
+          { "label": "Features", "href": "/features" },
+          { "label": "Pricing", "href": "/pricing" },
+          { "label": "FAQ", "href": "/faq" }
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          { "label": "About", "href": "/about" },
+          { "label": "Blog", "href": "/articles" },
+          { "label": "Careers", "href": "/careers" }
+        ]
+      },
+      {
+        "title": "Legal",
+        "links": [
+          { "label": "Privacy", "href": "/privacy" },
+          { "label": "Terms", "href": "/terms" },
+          { "label": "Cookie Policy", "href": "/cookies" }
+        ]
+      }
+    ],
+    "copyright": "© 2025 Vehicle Intelligence Platform. All rights reserved."
+  },
+  "homepage": {
+    "hero": {
+      "title": "AI-Powered Vehicle Intelligence",
+      "subtitle": "Auto-generate rich, data-driven vehicle comparison and overview pages with interactive charts, calculators, and quizzes powered by AI",
+      "cta": {
+        "primary": { "label": "Generate Content", "href": "/admin/generate" },
+        "secondary": { "label": "View Articles", "href": "/articles" }
+      }
+    },
+    "trending": {
+      "title": "Trending Topics",
+      "pillars": [
+        { "title": "Electric Vehicles", "slug": "electric-vehicles", "count": 24 },
+        { "title": "Midsize Sedans", "slug": "midsize-sedans", "count": 18 },
+        { "title": "SUVs & Crossovers", "slug": "suvs-crossovers", "count": 32 },
+        { "title": "Fuel Economy", "slug": "fuel-economy", "count": 15 },
+        { "title": "Safety Ratings", "slug": "safety-ratings", "count": 21 },
+        { "title": "Luxury Cars", "slug": "luxury-cars", "count": 12 }
+      ]
+    },
+    "latestArticles": [
+      {
+        "title": "2026 Midsize Sedan Comparison",
+        "slug": "2026-midsize-sedan-comparison",
+        "excerpt": "Honda Accord vs Toyota Camry vs Mazda6 - Which sedan offers the best value?",
+        "image": "/2026-midsize-sedan-comparison.jpg",
+        "category": "Comparisons",
+        "publishedAt": "2026-01-15T10:00:00Z"
+      },
+      {
+        "title": "Best Electric SUVs for 2026",
+        "slug": "best-electric-suvs-2026",
+        "excerpt": "Comprehensive guide to the top electric SUVs hitting the market this year",
+        "image": "/electric-suvs-2026.jpg",
+        "category": "Electric Vehicles",
+        "publishedAt": "2026-01-14T10:00:00Z"
+      },
+      {
+        "title": "Fuel Economy Champions 2026",
+        "slug": "fuel-economy-champions-2026",
+        "excerpt": "The most fuel-efficient vehicles across all categories",
+        "image": "/fuel-economy-2026.jpg",
+        "category": "Fuel Economy",
+        "publishedAt": "2026-01-13T10:00:00Z"
+      },
+      {
+        "title": "Luxury Sedan Showdown",
+        "slug": "luxury-sedan-showdown",
+        "excerpt": "BMW 5 Series vs Mercedes E-Class vs Audi A6 comparison",
+        "image": "/luxury-sedans.jpg",
+        "category": "Luxury Cars",
+        "publishedAt": "2026-01-12T10:00:00Z"
+      },
+      {
+        "title": "Top Safety Pick Winners 2026",
+        "slug": "top-safety-picks-2026",
+        "excerpt": "IIHS Top Safety Pick+ award winners and what makes them safe",
+        "image": "/safety-picks-2026.jpg",
+        "category": "Safety Ratings",
+        "publishedAt": "2026-01-11T10:00:00Z"
+      },
+      {
+        "title": "Compact SUV Buyer's Guide",
+        "slug": "compact-suv-buyers-guide",
+        "excerpt": "Everything you need to know before buying a compact SUV",
+        "image": "/compact-suvs.jpg",
+        "category": "SUVs & Crossovers",
+        "publishedAt": "2026-01-10T10:00:00Z"
+      }
+    ],
+    "featuredCollections": [
+      {
+        "title": "Electric Vehicle Guide",
+        "description": "Complete guide to EVs, charging, and making the switch",
+        "articleCount": 24,
+        "image": "/collection-ev.jpg",
+        "href": "/collections/electric-vehicles"
+      },
+      {
+        "title": "Family Vehicle Finder",
+        "description": "Best vehicles for families with safety and space ratings",
+        "articleCount": 18,
+        "image": "/collection-family.jpg",
+        "href": "/collections/family-vehicles"
+      },
+      {
+        "title": "Performance & Sports Cars",
+        "description": "High-performance vehicles and track-ready machines",
+        "articleCount": 15,
+        "image": "/collection-performance.jpg",
+        "href": "/collections/performance"
+      }
+    ],
+    "videos": [
+      {
+        "title": "2026 Midsize Sedan Comparison",
+        "slug": "2026-midsize-sedan-comparison",
+        "thumbnail": "/video-thumb-sedans.jpg",
+        "duration": 62,
+        "views": "12.5K"
+      },
+      {
+        "title": "Best Electric SUVs for 2026",
+        "slug": "best-electric-suvs-2026",
+        "thumbnail": "/video-thumb-ev-suvs.jpg",
+        "duration": 78,
+        "views": "8.2K"
+      },
+      {
+        "title": "Fuel Economy Champions 2026",
+        "slug": "fuel-economy-champions-2026",
+        "thumbnail": "/video-thumb-fuel.jpg",
+        "duration": 45,
+        "views": "6.1K"
+      },
+      {
+        "title": "Luxury Sedan Showdown",
+        "slug": "luxury-sedan-showdown",
+        "thumbnail": "/video-thumb-luxury.jpg",
+        "duration": 92,
+        "views": "15.3K"
+      }
+    ],
+    "kpis": {
+      "postsToday": 3,
+      "avgPublishTime": "4.2 min",
+      "queueLength": 7,
+      "buildStatus": "passing"
+    },
+    "tools": [
+      {
+        "title": "UTM Builder",
+        "description": "Generate campaign tracking URLs with UTM parameters",
+        "icon": "link",
+        "href": "/tools/utm-builder"
+      },
+      {
+        "title": "Threadify",
+        "description": "Convert long-form content into Twitter threads",
+        "icon": "twitter",
+        "href": "/tools/threadify"
+      },
+      {
+        "title": "OG Preview",
+        "description": "Preview how your content looks when shared on social media",
+        "icon": "eye",
+        "href": "/tools/og-preview"
+      }
+    ],
+    "newsletter": {
+      "title": "Get Weekly Vehicle Insights",
+      "description": "Join 10,000+ readers getting the latest vehicle comparisons, reviews, and buying guides delivered to their inbox every week.",
+      "placeholder": "Enter your email",
+      "buttonText": "Subscribe"
+    }
+  }
+}

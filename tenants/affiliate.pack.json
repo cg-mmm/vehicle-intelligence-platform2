@@ -1,0 +1,19 @@
+{
+  "domains": {
+    "default": {
+      "aff": "abc123",
+      "utm_source": "vip",
+      "utm_medium": "referral"
+    },
+    "dealer-network.com": {
+      "dealer_id": "DN12345",
+      "ref": "automata",
+      "utm_campaign": "vehicle_comparison"
+    },
+    "manufacturer-site.com": {
+      "partner": "automata2",
+      "source": "comparison_tool",
+      "utm_source": "automata"
+    }
+  }
+}

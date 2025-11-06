@@ -1,0 +1,118 @@
+{
+  "title": "2026 Midsize Sedan Comparison: Honda Accord vs Toyota Camry vs Mazda6",
+  "slug": "2026-midsize-sedan-comparison-honda-accord-vs-toyota-camry-vs-mazda6",
+  "description": "Compare the top midsize sedans of 2026 including Honda Accord, Toyota Camry, and Mazda6 with detailed specs, pricing, and expert analysis.",
+  "hero": {
+    "title": "2026 Midsize Sedan Comparison",
+    "subtitle": "Honda Accord vs Toyota Camry vs Mazda6",
+    "eyebrow": "Vehicle Comparison",
+    "badges": ["Updated 2026", "Expert Analysis"],
+    "cta": {
+      "label": "Get Pricing",
+      "href": "#pricing"
+    }
+  },
+  "toc": [
+    { "id": "introduction", "title": "Introduction" },
+    { "id": "comparison", "title": "Side-by-Side Comparison" },
+    { "id": "specifications", "title": "Detailed Specifications" },
+    { "id": "pros-cons", "title": "Pros & Cons" }
+  ],
+  "blocks": [
+    {
+      "type": "intro",
+      "html": "<p>The midsize sedan segment remains one of the most competitive in the automotive market. For 2026, the Honda Accord, Toyota Camry, and Mazda6 continue to set the standard for reliability, comfort, and value.</p><p>In this comprehensive comparison, we'll examine each vehicle's strengths and help you determine which sedan best fits your needs.</p>"
+    },
+    {
+      "type": "comparisonTable",
+      "caption": "Key Specifications Comparison",
+      "columns": ["Metric", "Honda Accord", "Toyota Camry", "Mazda6"],
+      "rows": [
+        { "Metric": "Starting Price", "Honda Accord": "$28,300", "Toyota Camry": "$27,500", "Mazda6": "$26,800" },
+        { "Metric": "Horsepower", "Honda Accord": "192 hp", "Toyota Camry": "203 hp", "Mazda6": "187 hp" },
+        { "Metric": "City MPG", "Honda Accord": "30", "Toyota Camry": "28", "Mazda6": "26" },
+        { "Metric": "Highway MPG", "Honda Accord": "38", "Toyota Camry": "39", "Mazda6": "35" }
+      ],
+      "highlightRule": "max"
+    },
+    {
+      "type": "specGrid",
+      "groups": [
+        {
+          "title": "Honda Accord",
+          "items": [
+            { "label": "Engine", "value": "1.5L Turbo I4" },
+            { "label": "Transmission", "value": "CVT" },
+            { "label": "Drivetrain", "value": "FWD" },
+            { "label": "Seating", "value": "5 passengers" }
+          ]
+        },
+        {
+          "title": "Toyota Camry",
+          "items": [
+            { "label": "Engine", "value": "2.5L I4" },
+            { "label": "Transmission", "value": "8-Speed Auto" },
+            { "label": "Drivetrain", "value": "FWD" },
+            { "label": "Seating", "value": "5 passengers" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "prosCons",
+      "pros": [
+        "Excellent fuel economy across all models",
+        "Spacious and comfortable interiors",
+        "Advanced safety features standard",
+        "Strong resale values"
+      ],
+      "cons": [
+        "Premium features can increase price significantly",
+        "Some competitors offer more powerful engines",
+        "Infotainment systems vary in user-friendliness"
+      ]
+    }
+  ],
+  "enhancements": {
+    "tldr": {
+      "type": "tldr",
+      "content": "The Honda Accord leads in fuel efficiency, the Toyota Camry offers the best balance of power and reliability, while the Mazda6 provides the most engaging driving experience at the lowest starting price."
+    },
+    "keyTakeaways": {
+      "type": "key_takeaways",
+      "items": [
+        "All three sedans offer excellent value and reliability",
+        "Honda Accord achieves best-in-class fuel economy",
+        "Toyota Camry provides the most powerful base engine",
+        "Mazda6 has the lowest starting price"
+      ]
+    },
+    "quiz": {
+      "type": "quiz",
+      "title": "Which Sedan is Right for You?",
+      "questions": [
+        {
+          "prompt": "What's your top priority in a midsize sedan?",
+          "choices": ["Fuel efficiency", "Power and performance", "Lowest price", "Brand reputation"],
+          "correctIndex": 0,
+          "explanation": "While all factors matter, fuel efficiency typically provides the best long-term value in a midsize sedan."
+        }
+      ]
+    },
+    "mpgCalculator": {
+      "type": "mpg_calculator",
+      "label": "Calculate Your Fuel Costs",
+      "defaults": {
+        "cityMpg": 30,
+        "hwyMpg": 38,
+        "fuelPrice": 3.5,
+        "miles": 12000
+      }
+    }
+  },
+  "seo": {
+    "title": "2026 Midsize Sedan Comparison: Accord vs Camry vs Mazda6",
+    "description": "Compare the top midsize sedans of 2026 including Honda Accord, Toyota Camry, and Mazda6 with detailed specs, pricing, and expert analysis.",
+    "canonical": "https://example.com/articles/2026-midsize-sedan-comparison-honda-accord-vs-toyota-camry-vs-mazda6"
+  }
+}

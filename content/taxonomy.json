@@ -1,0 +1,205 @@
+{
+  "pillars": [
+    {
+      "id": "pillar-sedans",
+      "slug": "sedans",
+      "title": "Sedans",
+      "description": "Your master hub for sedan research and ownership.",
+      "icon": "Car",
+      "coverImage": "/sedan-hero.jpg",
+      "navWeight": 10,
+      "relatedPillars": ["pillar-suvs"]
+    },
+    {
+      "id": "pillar-suvs",
+      "slug": "suvs",
+      "title": "SUVs",
+      "description": "Your ultimate destination for SUV comparisons and reviews.",
+      "icon": "Layers",
+      "coverImage": "/suv-hero.jpg",
+      "navWeight": 20,
+      "relatedPillars": ["pillar-sedans"]
+    }
+  ],
+  "sections": [
+    {
+      "id": "section-sedans-comparisons",
+      "pillarId": "pillar-sedans",
+      "slug": "comparisons",
+      "title": "Comparisons",
+      "description": "Head-to-head matchups and rankings.",
+      "navWeight": 10,
+      "featuredClusterIds": ["cluster-sedans-midsize"]
+    },
+    {
+      "id": "section-sedans-deep-dives",
+      "pillarId": "pillar-sedans",
+      "slug": "deep-dives",
+      "title": "Deep Dives",
+      "description": "Long-form analysis and ownership insights.",
+      "navWeight": 20
+    },
+    {
+      "id": "section-sedans-guides",
+      "pillarId": "pillar-sedans",
+      "slug": "guides",
+      "title": "Guides",
+      "description": "How-to guides and owner resources.",
+      "navWeight": 30
+    },
+    {
+      "id": "section-suvs-comparisons",
+      "pillarId": "pillar-suvs",
+      "slug": "comparisons",
+      "title": "Comparisons",
+      "description": "Head-to-head SUV matchups and rankings.",
+      "navWeight": 10,
+      "featuredClusterIds": ["cluster-suvs-electric"]
+    },
+    {
+      "id": "section-suvs-deep-dives",
+      "pillarId": "pillar-suvs",
+      "slug": "deep-dives",
+      "title": "Long-form SUV analysis and ownership insights.",
+      "navWeight": 20
+    },
+    {
+      "id": "section-suvs-guides",
+      "pillarId": "pillar-suvs",
+      "slug": "guides",
+      "title": "Guides",
+      "description": "SUV buying guides and owner resources.",
+      "navWeight": 30
+    }
+  ],
+  "clusters": [
+    {
+      "id": "cluster-sedans-midsize",
+      "pillarId": "pillar-sedans",
+      "sectionId": "section-sedans-comparisons",
+      "slug": "midsize-sedans",
+      "title": "Midsize Sedans",
+      "description": "Comparisons and rankings for midsize sedans.",
+      "coverImage": "/midsize-sedans.jpg",
+      "navWeight": 10,
+      "tags": ["midsize", "family-sedan"]
+    },
+    {
+      "id": "cluster-sedans-luxury",
+      "pillarId": "pillar-sedans",
+      "sectionId": "section-sedans-comparisons",
+      "slug": "luxury-sedans",
+      "title": "Luxury Sedans",
+      "description": "Premium sedan comparisons and reviews.",
+      "coverImage": "/luxury-sedans.jpg",
+      "navWeight": 20,
+      "tags": ["luxury", "premium"]
+    },
+    {
+      "id": "cluster-suvs-electric",
+      "pillarId": "pillar-suvs",
+      "sectionId": "section-suvs-comparisons",
+      "slug": "electric-suvs",
+      "title": "Electric SUVs",
+      "description": "Comprehensive guides to the latest electric SUVs.",
+      "coverImage": "/electric-suvs.jpg",
+      "navWeight": 10,
+      "tags": ["electric", "ev", "suv"]
+    },
+    {
+      "id": "cluster-suvs-compact",
+      "pillarId": "pillar-suvs",
+      "sectionId": "section-suvs-comparisons",
+      "slug": "compact-suvs",
+      "title": "Compact SUVs",
+      "description": "Detailed comparisons of popular compact SUVs.",
+      "coverImage": "/compact-suvs.jpg",
+      "navWeight": 20,
+      "tags": ["compact", "crossover"]
+    },
+    {
+      "id": "cluster-sedans-safety",
+      "pillarId": "pillar-sedans",
+      "sectionId": "section-sedans-guides",
+      "slug": "safety-ratings",
+      "title": "Safety Ratings",
+      "description": "Comprehensive safety ratings and crash test results.",
+      "coverImage": "/safety-ratings.jpg",
+      "navWeight": 10,
+      "tags": ["safety", "crash-test", "iihs"]
+    },
+    {
+      "id": "cluster-sedans-fuel-economy",
+      "pillarId": "pillar-sedans",
+      "sectionId": "section-sedans-guides",
+      "slug": "fuel-economy",
+      "title": "Fuel Economy",
+      "description": "Fuel efficiency guides and MPG comparisons.",
+      "coverImage": "/fuel-economy.jpg",
+      "navWeight": 20,
+      "tags": ["fuel-economy", "mpg", "efficiency"]
+    }
+  ],
+  "articles": [
+    {
+      "id": "art-2026-midsize-sedan-comparison",
+      "slug": "2026-midsize-sedan-comparison",
+      "title": "2026 Midsize Sedan Comparison",
+      "description": "Accord vs Camry vs Mazda6—specs, real-world costs, and verdicts.",
+      "pillarId": "pillar-sedans",
+      "sectionId": "section-sedans-comparisons",
+      "clusterId": "cluster-sedans-midsize",
+      "content_type": "comparison"
+    },
+    {
+      "id": "art-luxury-sedan-showdown",
+      "slug": "luxury-sedan-showdown",
+      "title": "Luxury Sedan Showdown",
+      "description": "BMW 5 Series vs Mercedes E-Class vs Audi A6.",
+      "pillarId": "pillar-sedans",
+      "sectionId": "section-sedans-comparisons",
+      "clusterId": "cluster-sedans-luxury",
+      "content_type": "comparison"
+    },
+    {
+      "id": "art-best-electric-suvs-2026",
+      "slug": "best-electric-suvs-2026",
+      "title": "Best Electric SUVs for 2026",
+      "description": "Tesla Model Y vs Ford Mach-E vs Hyundai Ioniq 5.",
+      "pillarId": "pillar-suvs",
+      "sectionId": "section-suvs-comparisons",
+      "clusterId": "cluster-suvs-electric",
+      "content_type": "comparison"
+    },
+    {
+      "id": "art-compact-suv-buyers-guide",
+      "slug": "compact-suv-buyers-guide",
+      "title": "Compact SUV Buyer's Guide",
+      "description": "Everything you need to know before buying a compact SUV.",
+      "pillarId": "pillar-suvs",
+      "sectionId": "section-suvs-guides",
+      "clusterId": "cluster-suvs-compact",
+      "content_type": "how_to"
+    },
+    {
+      "id": "art-fuel-economy-champions-2026",
+      "slug": "fuel-economy-champions-2026",
+      "title": "Fuel Economy Champions 2026",
+      "description": "The most fuel-efficient vehicles across all categories.",
+      "pillarId": "pillar-sedans",
+      "sectionId": "section-sedans-guides",
+      "clusterId": "cluster-sedans-fuel-economy",
+      "content_type": "how_to"
+    },
+    {
+      "id": "art-top-safety-picks-2026",
+      "slug": "top-safety-picks-2026",
+      "title": "Top Safety Pick Winners 2026",
+      "description": "IIHS Top Safety Pick+ award winners and what makes them safe.",
+      "pillarId": "pillar-sedans",
+      "sectionId": "section-sedans-guides",
+      "clusterId": "cluster-sedans-safety",
+      "content_type": "how_to"
+    }
+  ]
+}

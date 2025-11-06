@@ -1,0 +1,557 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "../src/styles/liquid-neon.css";
+@import "../src/styles/css-vars.css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* ========================================
+     SUNSET CORAL - Vibrant & Distinctive Theme
+     Warm coral → sunset orange → golden yellow gradient
+     Deep teal and purple accents for contrast
+     ======================================== */
+
+  /* Content width system */
+  --content-max: 1200px;
+  --content-pad: 24px;
+
+  /* Brand Gradient - Sunset Coral (warm, vibrant, distinctive) */
+  --gradient-start: #ff6b6b; /* Coral Pink */
+  --gradient-mid: #ff8c42; /* Sunset Orange */
+  --gradient-end: #ffd93d; /* Golden Yellow */
+
+  /* CTA / Conversion Accents (cool contrast) */
+  --accent: #00b4d8; /* Deep Teal (primary CTA) */
+  --accent-2: #9b59b6; /* Purple (CTA hover/2nd) */
+
+  /* Surfaces (light, clean) */
+  --bg: #fffbf5; /* Page canvas (warm white) */
+  --panel: #ffffff; /* Cards / panels */
+  --muted: #fff5e6; /* Subtle fills (warm tint) */
+  --border: #ffe4cc; /* Dividers / inputs (warm) */
+
+  /* Typography */
+  --fg: #2d1810; /* Primary text (warm dark brown) */
+  --fg-muted: #8b6f47; /* Secondary text (warm brown) */
+  --fg-contrast: #ffffff; /* Text on dark/cta */
+
+  /* System states - using theme colors */
+  --success: #00b4d8; /* Teal (matches accent) */
+  --warning: #ff8c42; /* Sunset Orange (matches gradient) */
+  --error: #ff6b6b; /* Coral Pink (matches gradient) */
+
+  /* Links & focus */
+  --link: #00b4d8; /* Teal link */
+  --focus-ring: #ff6b6b; /* Coral highlight */
+
+  /* Elevation */
+  --shadow-soft: 0 12px 28px rgba(45, 24, 16, 0.12);
+  --shadow-cta: 0 16px 44px rgba(0, 180, 216, 0.32);
+
+  /* Derived blob tints for Sunset Coral animated sections */
+  --blob-a: color-mix(in oklab, var(--gradient-start) 28%, white 72%);
+  --blob-b: color-mix(in oklab, var(--gradient-mid) 26%, white 74%);
+  --blob-c: color-mix(in oklab, var(--gradient-end) 24%, white 76%);
+  --blob-sheen: color-mix(in oklab, var(--accent) 30%, white 70%);
+  --blob-blur: 34px;
+  --blob-opacity: 0.9;
+
+  /* shadcn/ui required tokens to match Sunset Coral */
+  --background: #fffbf5;
+  --foreground: #2d1810;
+  --card: #ffffff;
+  --card-foreground: #2d1810;
+  --popover: #ffffff;
+  --popover-foreground: #2d1810;
+  --primary: #ff6b6b;
+  --primary-foreground: #ffffff;
+  --secondary: #fff5e6;
+  --secondary-foreground: #2d1810;
+  --muted: #fff5e6;
+  --muted-foreground: #8b6f47;
+  --accent: #00b4d8;
+  --accent-foreground: #ffffff;
+  --destructive: #ff6b6b;
+  --destructive-foreground: #ffffff;
+  --border: #ffe4cc;
+  --input: #ffffff;
+  --ring: #ff6b6b;
+  --chart-1: #ff6b6b;
+  --chart-2: #ff8c42;
+  --chart-3: #ffd93d;
+  --chart-4: #00b4d8;
+  --chart-5: #9b59b6;
+  --radius: 0.75rem;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #2d1810;
+  --sidebar-primary: #ff6b6b;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #fff5e6;
+  --sidebar-accent-foreground: #2d1810;
+  --sidebar-border: #ffe4cc;
+  --sidebar-ring: #ff6b6b;
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Updated to Glacier Punch gradient utilities */
+  .bg-brand-gradient {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-mid), var(--gradient-end));
+  }
+
+  .bg-cta-gradient {
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  }
+
+  .text-brand-gradient {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-mid), var(--gradient-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Glacier Punch animation system */
+  @keyframes tokenWaveDrift {
+    0% {
+      transform: translate3d(0, 0, 0) scale(1);
+    }
+    50% {
+      transform: translate3d(5%, -3%, 0) scale(1.04);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) scale(1);
+    }
+  }
+
+  @keyframes sheenSweep {
+    0% {
+      transform: translateX(-120%);
+    }
+    100% {
+      transform: translateX(120%);
+    }
+  }
+
+  @keyframes ctaPulse {
+    0%,
+    100% {
+      transform: translateZ(0) scale(1);
+      box-shadow: var(--shadow-cta);
+    }
+    50% {
+      transform: translateZ(0) scale(1.03);
+      box-shadow: 0 18px 48px rgba(0, 180, 216, 0.4);
+    }
+  }
+
+  /* Tokenized liquid background using Glacier Punch colors */
+  .bg-liquid-tokenized {
+    position: relative;
+    isolation: isolate;
+    background: radial-gradient(
+        700px 520px at 15% 20%,
+        color-mix(in oklab, var(--blob-a) 100%, transparent) 0 60%,
+        transparent 60%
+      ),
+      radial-gradient(
+        620px 520px at 85% 25%,
+        color-mix(in oklab, var(--blob-b) 100%, transparent) 0 62%,
+        transparent 62%
+      ),
+      radial-gradient(
+        680px 560px at 70% 80%,
+        color-mix(in oklab, var(--blob-c) 100%, transparent) 0 62%,
+        transparent 62%
+      ),
+      linear-gradient(
+        120deg,
+        color-mix(in oklab, var(--bg) 80%, var(--panel) 20%),
+        color-mix(in oklab, var(--panel) 88%, white 12%)
+      );
+  }
+
+  .bg-liquid-tokenized::before,
+  .bg-liquid-tokenized::after {
+    content: "";
+    position: absolute;
+    inset: -20%;
+    background: radial-gradient(
+        520px 520px at 10% 30%,
+        color-mix(in oklab, var(--blob-b) 80%, transparent) 0 60%,
+        transparent 60%
+      ),
+      radial-gradient(
+        520px 520px at 90% 70%,
+        color-mix(in oklab, var(--blob-c) 80%, transparent) 0 60%,
+        transparent 60%
+      ),
+      conic-gradient(
+        from 0deg at 50% 50%,
+        color-mix(in oklab, var(--blob-a) 70%, transparent) 0 40%,
+        transparent 40% 75%,
+        color-mix(in oklab, var(--blob-sheen) 60%, transparent) 75% 100%
+      );
+    filter: blur(var(--blob-blur));
+    animation: tokenWaveDrift 22s ease-in-out infinite;
+    opacity: var(--blob-opacity);
+    z-index: -1;
+  }
+
+  .bg-liquid-tokenized::after {
+    animation-duration: 30s;
+    mix-blend-mode: multiply;
+  }
+
+  /* Optional: lightning/sheen pass using theme accent */
+  .liquid-shimmer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    background: linear-gradient(
+      100deg,
+      transparent 35%,
+      color-mix(in oklab, var(--blob-sheen) 100%, transparent) 50%,
+      transparent 65%
+    );
+    background-size: 220% 100%;
+    animation: tokenLightningSweep 3.2s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+    mix-blend-mode: overlay;
+  }
+
+  /* Legibility veil (keeps AA when text sits on motion) */
+  .legible-overlay::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.12));
+  }
+
+  /* Respect user preferences */
+  @media (prefers-reduced-motion: reduce) {
+    .bg-liquid-tokenized::before,
+    .bg-liquid-tokenized::after,
+    .liquid-shimmer::before {
+      animation: none !important;
+    }
+  }
+
+  /* Focus states */
+  *:focus-visible {
+    @apply ring-2 ring-ring outline-none;
+  }
+
+  /* Typography - Light theme prose styles */
+  .prose {
+    --tw-prose-body: var(--foreground);
+    --tw-prose-headings: var(--foreground);
+    --tw-prose-links: var(--link);
+    --tw-prose-bold: var(--foreground);
+    --tw-prose-counters: var(--muted-foreground);
+    --tw-prose-bullets: var(--muted-foreground);
+    --tw-prose-hr: var(--border);
+    --tw-prose-quotes: var(--foreground);
+    --tw-prose-quote-borders: var(--primary);
+    --tw-prose-captions: var(--muted-foreground);
+    --tw-prose-code: var(--accent);
+    --tw-prose-pre-code: var(--foreground);
+    --tw-prose-pre-bg: var(--muted);
+    --tw-prose-th-borders: var(--border);
+    --tw-prose-td-borders: var(--border);
+  }
+
+  .prose code {
+    background: var(--muted);
+    padding: 0.2em 0.4em;
+    border-radius: 0.25rem;
+    font-size: 0.875em;
+    color: var(--accent);
+  }
+
+  .prose pre {
+    background: var(--muted);
+    border: 1px solid var(--border);
+  }
+
+  .prose blockquote {
+    border-left-color: var(--primary);
+    color: var(--foreground);
+  }
+
+  .prose table {
+    border-collapse: collapse;
+  }
+
+  .prose th {
+    background: var(--muted);
+    color: var(--foreground);
+    font-weight: 600;
+  }
+
+  .prose td {
+    border-color: var(--border);
+  }
+
+  .prose tr:nth-child(even) {
+    background: var(--card);
+  }
+
+  .prose tr:nth-child(odd) {
+    background: var(--muted);
+  }
+
+  /* Ad/monetization styles */
+  .ad-kicker {
+    color: var(--accent);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+
+  .ad-price {
+    color: var(--accent-2);
+    font-weight: 800;
+    font-feature-settings: "tnum" 1;
+  }
+
+  .ad-subtext {
+    color: var(--fg-muted);
+  }
+
+  /* Added content width container utilities */
+  /* Core container: centers and clamps width */
+  .container-x {
+    max-width: var(--content-max);
+    margin-inline: auto;
+    padding-inline: var(--content-pad);
+  }
+
+  /* Full-bleed band: background stretches edge-to-edge, content stays clamped */
+  .band {
+    position: relative;
+    width: 100%;
+  }
+
+  .band > .band-inner {
+    /* Use this as the first child wrapper in any full-bleed section */
+    max-width: var(--content-max);
+    margin-inline: auto;
+    padding-inline: var(--content-pad);
+  }
+
+  /* Align dropdowns/overlays to the container edges (e.g., megamenu) */
+  .align-to-container {
+    position: absolute;
+    left: max(var(--content-pad), calc((100vw - var(--content-max)) / 2));
+    right: max(var(--content-pad), calc((100vw - var(--content-max)) / 2));
+  }
+
+  /* Safety guards to prevent rogue overflow */
+  img,
+  video,
+  canvas,
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  [class*="grid"],
+  [class*="flex"] {
+    min-width: 0;
+  }
+
+  .overflow-clip {
+    overflow: clip;
+  }
+
+  /* Added tokenized animated liquid background system */
+  /* ===== Tokenized Animated Liquid Background (theme-aware) ===== */
+
+  /* Derived blob tints (auto-update with theme via color-mix) */
+  :root {
+    --blob-a: color-mix(in oklab, var(--gradient-start) 28%, white 72%);
+    --blob-b: color-mix(in oklab, var(--gradient-mid) 26%, white 74%);
+    --blob-c: color-mix(in oklab, var(--gradient-end) 24%, white 76%);
+    --blob-sheen: color-mix(in oklab, var(--accent) 30%, white 70%);
+
+    /* Intensity controls */
+    --blob-blur: 34px;
+    --blob-opacity: 0.9;
+  }
+
+  /* Keyframe animations */
+  @keyframes tokenWaveDrift {
+    0% {
+      transform: translate3d(0, 0, 0) scale(1);
+      filter: saturate(105%);
+    }
+    50% {
+      transform: translate3d(5%, -3%, 0) scale(1.04);
+      filter: saturate(112%);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) scale(1);
+      filter: saturate(105%);
+    }
+  }
+
+  @keyframes tokenLightningSweep {
+    0% {
+      background-position: -120% 50%;
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.35;
+    }
+    100% {
+      background-position: 120% 50%;
+      opacity: 0;
+    }
+  }
+
+  /* Main liquid field (uses theme tokens) */
+  .bg-liquid-tokenized {
+    position: relative;
+    isolation: isolate;
+    background: radial-gradient(
+        700px 520px at 15% 20%,
+        color-mix(in oklab, var(--blob-a) 100%, transparent) 0 60%,
+        transparent 60%
+      ),
+      radial-gradient(
+        620px 520px at 85% 25%,
+        color-mix(in oklab, var(--blob-b) 100%, transparent) 0 62%,
+        transparent 62%
+      ),
+      radial-gradient(
+        680px 560px at 70% 80%,
+        color-mix(in oklab, var(--blob-c) 100%, transparent) 0 62%,
+        transparent 62%
+      ),
+      linear-gradient(
+        120deg,
+        color-mix(in oklab, var(--bg) 80%, var(--panel) 20%),
+        color-mix(in oklab, var(--panel) 88%, white 12%)
+      );
+  }
+
+  .bg-liquid-tokenized::before,
+  .bg-liquid-tokenized::after {
+    content: "";
+    position: absolute;
+    inset: -20%;
+    background: radial-gradient(
+        520px 520px at 10% 30%,
+        color-mix(in oklab, var(--blob-b) 80%, transparent) 0 60%,
+        transparent 60%
+      ),
+      radial-gradient(
+        520px 520px at 90% 70%,
+        color-mix(in oklab, var(--blob-c) 80%, transparent) 0 60%,
+        transparent 60%
+      ),
+      conic-gradient(
+        from 0deg at 50% 50%,
+        color-mix(in oklab, var(--blob-a) 70%, transparent) 0 40%,
+        transparent 40% 75%,
+        color-mix(in oklab, var(--blob-sheen) 60%, transparent) 75% 100%
+      );
+    filter: blur(var(--blob-blur));
+    animation: tokenWaveDrift 22s ease-in-out infinite;
+    opacity: var(--blob-opacity);
+    z-index: -1;
+  }
+
+  .bg-liquid-tokenized::after {
+    animation-duration: 30s;
+    mix-blend-mode: multiply;
+  }
+
+  /* Optional: lightning/sheen pass using theme accent */
+  .liquid-shimmer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    background: linear-gradient(
+      100deg,
+      transparent 35%,
+      color-mix(in oklab, var(--blob-sheen) 100%, transparent) 50%,
+      transparent 65%
+    );
+    background-size: 220% 100%;
+    animation: tokenLightningSweep 3.2s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+    mix-blend-mode: overlay;
+  }
+
+  /* Legibility veil (keeps AA when text sits on motion) */
+  .legible-overlay::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.12));
+  }
+
+  /* Respect user preferences */
+  @media (prefers-reduced-motion: reduce) {
+    .bg-liquid-tokenized::before,
+    .bg-liquid-tokenized::after,
+    .liquid-shimmer::before {
+      animation: none !important;
+    }
+  }
+}

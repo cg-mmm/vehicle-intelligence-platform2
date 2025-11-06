@@ -1,0 +1,59 @@
+{
+  "offers": [
+    {
+      "id": "spring-sale-2025",
+      "title": "Spring Vehicle Sale",
+      "image": "/offers/spring-sale.jpg",
+      "body": "Get up to $5,000 off select 2025 models. Limited time offer on sedans and SUVs.",
+      "cta": "View Deals",
+      "url": "/offers/spring-sale",
+      "start": "2025-03-01T00:00:00Z",
+      "end": "2025-05-31T23:59:59Z",
+      "tags": ["sale", "sedan", "suv"]
+    },
+    {
+      "id": "ev-incentive",
+      "title": "Electric Vehicle Tax Credit",
+      "image": "/offers/ev-credit.jpg",
+      "body": "Qualify for up to $7,500 federal tax credit on eligible electric vehicles.",
+      "cta": "Learn More",
+      "url": "/offers/ev-incentive",
+      "start": "2025-01-01T00:00:00Z",
+      "end": "2025-12-31T23:59:59Z",
+      "tags": ["ev", "incentive", "tax-credit"]
+    },
+    {
+      "id": "financing-special",
+      "title": "0% APR Financing",
+      "image": "/offers/financing.jpg",
+      "body": "Get 0% APR for 60 months on select new vehicles. Subject to credit approval.",
+      "cta": "Check Eligibility",
+      "url": "/offers/financing",
+      "start": "2025-02-01T00:00:00Z",
+      "end": "2025-04-30T23:59:59Z",
+      "tags": ["financing", "apr", "special"]
+    },
+    {
+      "id": "trade-in-bonus",
+      "title": "Trade-In Bonus Event",
+      "image": "/offers/trade-in.jpg",
+      "body": "Get an extra $1,000 trade-in bonus when you upgrade to a new model.",
+      "cta": "Get Appraisal",
+      "url": "/offers/trade-in",
+      "start": "2025-01-15T00:00:00Z",
+      "end": "2025-06-30T23:59:59Z",
+      "tags": ["trade-in", "bonus", "upgrade"]
+    },
+    {
+      "id": "lease-special",
+      "title": "Lease from $299/month",
+      "image": "/offers/lease.jpg",
+      "body": "Lease select 2025 sedans starting at $299/month for 36 months.",
+      "cta": "View Lease Deals",
+      "url": "/offers/lease",
+      "start": "2025-03-01T00:00:00Z",
+      "end": "2025-05-31T23:59:59Z",
+      "tags": ["lease", "sedan", "monthly"]
+    }
+  ]
+}

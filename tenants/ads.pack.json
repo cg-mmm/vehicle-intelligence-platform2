@@ -1,0 +1,36 @@
+{
+  "slots": [
+    {
+      "id": "top_banner",
+      "adapter": "gam",
+      "path": "/12345/homepage/top_banner",
+      "sizes": [[728, 90], [970, 90]],
+      "lazy": false,
+      "freqCap": null
+    },
+    {
+      "id": "home_inline_1",
+      "adapter": "adsense",
+      "path": "ca-pub-1234567890",
+      "sizes": [[300, 250], [336, 280]],
+      "lazy": true,
+      "freqCap": 3
+    },
+    {
+      "id": "in_article_1",
+      "adapter": "house",
+      "path": "/ads/house-ad-1.jpg",
+      "sizes": [[300, 250]],
+      "lazy": true,
+      "freqCap": 5
+    },
+    {
+      "id": "in_database_1",
+      "adapter": "gam",
+      "path": "/12345/database/inline",
+      "sizes": [[300, 600], [160, 600]],
+      "lazy": true,
+      "freqCap": null
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+# Ads.txt - Authorized Digital Sellers
+# This file specifies which advertising systems are authorized to sell ad inventory on this site
+# Format: <FIELD #1>, <FIELD #2>, <FIELD #3>, <FIELD #4>
+# Example: google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+
+# Add your authorized sellers here when ready to monetize
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+# Example entries (replace with actual IDs):
+# adtech.com, 12345, RESELLER
+# appnexus.com, 67890, RESELLER, f5ab79cb980f11d1

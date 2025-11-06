@@ -1,0 +1,30 @@
+{
+  "siteName": "Vehicle Intelligence Platform",
+  "siteUrl": "https://v0-automata-2.vercel.app",
+  "description": "AI-powered vehicle comparison and overview pages with interactive charts, calculators, and quizzes",
+  "logo": "/logo.png",
+  "organization": {
+    "name": "Vehicle Intelligence Platform",
+    "url": "https://v0-automata-2.vercel.app",
+    "logo": "/logo.png"
+  },
+  "author": {
+    "name": "Vehicle Intelligence Team",
+    "url": "https://v0-automata-2.vercel.app/about"
+  },
+  "social": {
+    "twitter": "@vehicleintel",
+    "facebook": "vehicleintel"
+  },
+  "defaultOgImage": "/og-default.png",
+  "videoPalette": {
+    "bg": "#000000",
+    "primary": "#0ea5e9",
+    "accent": "#22c55e",
+    "text": "#ffffff"
+  },
+  "videoTypeface": {
+    "heading": "Inter",
+    "body": "Inter"
+  }
+}

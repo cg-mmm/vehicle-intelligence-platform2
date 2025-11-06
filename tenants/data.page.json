@@ -1,0 +1,51 @@
+{
+  "title": "Baby Name Database",
+  "dataset": "local://datasets/baby-names/*.json",
+  "facets": [
+    {
+      "key": "gender",
+      "label": "Gender",
+      "type": "multi"
+    },
+    {
+      "key": "origin",
+      "label": "Origin",
+      "type": "multi"
+    },
+    {
+      "key": "tags",
+      "label": "Tags",
+      "type": "multi"
+    },
+    {
+      "key": "popularity_rank",
+      "label": "Popularity",
+      "type": "range",
+      "min": 1,
+      "max": 1000
+    }
+  ],
+  "columns": [
+    {
+      "key": "name",
+      "label": "Name",
+      "sortable": true
+    },
+    {
+      "key": "meaning",
+      "label": "Meaning"
+    },
+    {
+      "key": "origin",
+      "label": "Origin"
+    },
+    {
+      "key": "popularity_rank",
+      "label": "Popularity",
+      "sortable": true
+    }
+  ],
+  "detailRoute": "/names/[slug]",
+  "ads": ["top_banner", "in_database_1"],
+  "offersTags": ["baby", "registry", "diapers"]
+}

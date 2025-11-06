@@ -1,0 +1,6 @@
+# App-ads.txt - Authorized Digital Sellers for Mobile Apps
+# This file specifies which advertising systems are authorized to sell ad inventory for mobile apps
+# Format: <FIELD #1>, <FIELD #2>, <FIELD #3>, <FIELD #4>
+
+# Add your authorized mobile app sellers here when ready
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0

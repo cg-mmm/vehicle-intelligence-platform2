@@ -1,0 +1,44 @@
+{
+  "nodes": [
+    {
+      "slug": "2026-midsize-sedan-comparison",
+      "title": "2026 Midsize Sedan Comparison: Honda Accord vs Toyota Camry vs Mazda6",
+      "pillar": "sedan-buying-guide",
+      "cluster": "midsize-sedans",
+      "keywords": ["honda accord", "toyota camry", "mazda6", "sedan", "midsize", "fuel economy", "safety"],
+      "tags": ["comparison", "2026", "family-cars"]
+    },
+    {
+      "slug": "luxury-sedan-showdown",
+      "title": "Luxury Sedan Showdown: BMW 5 Series vs Mercedes E-Class vs Audi A6",
+      "pillar": "sedan-buying-guide",
+      "cluster": "luxury-sedans",
+      "keywords": ["bmw", "mercedes", "audi", "luxury", "sedan", "performance"],
+      "tags": ["comparison", "2026", "luxury"]
+    },
+    {
+      "slug": "best-electric-suvs-2026",
+      "title": "Best Electric SUVs for 2026",
+      "pillar": "suv-comparison-hub",
+      "cluster": "electric-suvs",
+      "keywords": ["electric", "suv", "ev", "range", "charging"],
+      "tags": ["buying-guide", "2026", "electric"]
+    },
+    {
+      "slug": "compact-suv-buyers-guide",
+      "title": "Compact SUV Buyer's Guide",
+      "pillar": "suv-comparison-hub",
+      "cluster": "compact-suvs",
+      "keywords": ["compact", "suv", "crossover", "family", "efficiency"],
+      "tags": ["buying-guide", "2026", "suv"]
+    },
+    {
+      "slug": "fuel-economy-champions-2026",
+      "title": "Fuel Economy Champions 2026",
+      "pillar": "sedan-buying-guide",
+      "cluster": "fuel-economy",
+      "keywords": ["fuel economy", "mpg", "efficient", "hybrid", "savings"],
+      "tags": ["buying-guide", "2026", "fuel-economy"]
+    }
+  ]
+}

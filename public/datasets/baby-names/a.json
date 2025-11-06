@@ -1,0 +1,90 @@
+[
+  {
+    "slug": "amelia",
+    "name": "Amelia",
+    "meaning": "Work, industrious",
+    "origin": "German",
+    "gender": "Female",
+    "tags": ["classic", "popular", "vintage"],
+    "popularity_rank": 4,
+    "variants": ["Emilia", "Amelie", "Amalia"],
+    "famous_bearers": ["Amelia Earhart", "Amelia Bedelia"]
+  },
+  {
+    "slug": "alexander",
+    "name": "Alexander",
+    "meaning": "Defender of the people",
+    "origin": "Greek",
+    "gender": "Male",
+    "tags": ["classic", "strong", "royal"],
+    "popularity_rank": 13,
+    "variants": ["Alex", "Xander", "Sasha"],
+    "famous_bearers": ["Alexander the Great", "Alexander Hamilton"]
+  },
+  {
+    "slug": "ava",
+    "name": "Ava",
+    "meaning": "Life, bird",
+    "origin": "Latin",
+    "gender": "Female",
+    "tags": ["modern", "popular", "short"],
+    "popularity_rank": 5,
+    "variants": ["Eva", "Avah"],
+    "famous_bearers": ["Ava Gardner", "Ava DuVernay"]
+  },
+  {
+    "slug": "aiden",
+    "name": "Aiden",
+    "meaning": "Little fire",
+    "origin": "Irish",
+    "gender": "Male",
+    "tags": ["modern", "popular", "celtic"],
+    "popularity_rank": 20,
+    "variants": ["Aidan", "Ayden", "Aden"],
+    "famous_bearers": ["Aiden Turner"]
+  },
+  {
+    "slug": "aria",
+    "name": "Aria",
+    "meaning": "Air, melody",
+    "origin": "Italian",
+    "gender": "Female",
+    "tags": ["modern", "musical", "elegant"],
+    "popularity_rank": 22,
+    "variants": ["Arya", "Ariah"],
+    "famous_bearers": ["Aria Stark (fictional)"]
+  },
+  {
+    "slug": "asher",
+    "name": "Asher",
+    "meaning": "Happy, blessed",
+    "origin": "Hebrew",
+    "gender": "Male",
+    "tags": ["biblical", "modern", "positive"],
+    "popularity_rank": 25,
+    "variants": ["Ash"],
+    "famous_bearers": ["Asher Roth"]
+  },
+  {
+    "slug": "aurora",
+    "name": "Aurora",
+    "meaning": "Dawn",
+    "origin": "Latin",
+    "gender": "Female",
+    "tags": ["mythological", "elegant", "nature"],
+    "popularity_rank": 36,
+    "variants": ["Rory", "Aura"],
+    "famous_bearers": ["Aurora (Roman goddess)", "Sleeping Beauty"]
+  },
+  {
+    "slug": "austin",
+    "name": "Austin",
+    "meaning": "Great, magnificent",
+    "origin": "English",
+    "gender": "Male",
+    "tags": ["modern", "place-name", "strong"],
+    "popularity_rank": 85,
+    "variants": ["Austen"],
+    "famous_bearers": ["Austin Powers (fictional)", "Stone Cold Steve Austin"]
+  }
+]

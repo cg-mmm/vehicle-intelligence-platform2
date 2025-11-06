@@ -1,0 +1,44 @@
+{
+  "focus_window_days": 30,
+  "publish_per_day": 3,
+  "pillars": [
+    {
+      "id": "suvs",
+      "priority": 1.0,
+      "target_quota": 40,
+      "freeze": false
+    },
+    {
+      "id": "sedans",
+      "priority": 0.6,
+      "target_quota": 25,
+      "freeze": false
+    },
+    {
+      "id": "trucks",
+      "priority": 0.8,
+      "target_quota": 30,
+      "freeze": false
+    }
+  ],
+  "clusters": [
+    {
+      "id": "suvs.midsize",
+      "priority": 1.2,
+      "target_quota": 20
+    },
+    {
+      "id": "suvs.electric",
+      "priority": 1.0,
+      "target_quota": 15
+    }
+  ],
+  "boost_entities": ["hybrid", "awd", "towing capacity"],
+  "deprioritize_patterns": ["2021 ", "old gen "],
+  "interlink_policy": {
+    "min_internal": 3,
+    "max_internal": 7,
+    "prefer_siblings": true,
+    "include_parent": true
+  }
+}

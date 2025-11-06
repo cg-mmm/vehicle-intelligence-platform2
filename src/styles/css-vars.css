@@ -1,0 +1,29 @@
+:root {
+  /* Map old --ds-* tokens to new system in globals.css */
+  --ds-bg: var(--bg);
+  --ds-surface: var(--surface);
+  --ds-surface-alt: var(--surface-2);
+  --ds-muted: var(--muted);
+
+  --ds-fg: var(--fg);
+  --ds-fg-muted: var(--fg-muted);
+
+  --ds-primary: var(--primary);
+  --ds-primary-fg: var(--primary-fg);
+  --ds-secondary: var(--secondary);
+  --ds-secondary-fg: var(--secondary-fg);
+  --ds-accent: var(--accent);
+  --ds-accent-fg: var(--accent-fg);
+
+  --ds-ring: var(--ring);
+
+  --ds-success: var(--success);
+  --ds-warning: var(--warning);
+  --ds-danger: var(--danger);
+
+  /* Gradients */
+  --ds-grad-a: var(--primary);
+  --ds-grad-b: var(--secondary);
+  --ds-grad-brand: var(--grad-accent);
+  --ds-grad-subtle: var(--grad-subtle);
+}
